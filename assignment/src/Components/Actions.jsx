@@ -7,6 +7,7 @@ function Actions() {
        <br/>
        <br/><br/>
        <hr/>
+       <br/>
        <button className="actions-btn-box">Add Another Action</button>
       </div>
     );

@@ -61,15 +61,12 @@
     border:1px solid grey;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-right: 10px;
-    padding-left:30px
+    padding-left:50px
 }
 
 /* Actions files css */
 
-/* .main-actions-div{
-    
 
-} */
 
 .actions-input-box{
     width: 200px;
@@ -94,7 +91,6 @@
 
 .conditions-todo-main{
     display:flex;
-    /* justify-content: center; */
     gap:20px;
     
 }
