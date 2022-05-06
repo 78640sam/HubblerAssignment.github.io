@@ -32,7 +32,7 @@ function Conditions() {
        <br/>
        <br/>
 
-       <button className="conditions-btn-box">Add New Rule</button>
+       <button className="conditions-btn-box">Add New Conditions</button>
      
       </div>
     );
