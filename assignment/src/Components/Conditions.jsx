@@ -1,10 +1,14 @@
-
+import "./style.css";
+import { useSelector } from "react-redux";
 
 
 function Conditions() {
+
+    const rule=useSelector((state)=>state.rule)
+
     return (
       <div className="App">
-         <h1>{}Rule</h1>
+         <h1>{rule}</h1>
          <h4>Button Name</h4>
 
         <input type="text" className="conditions-input-box"/>

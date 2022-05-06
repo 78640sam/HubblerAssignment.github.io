@@ -1,7 +1,7 @@
 import { STORE_RULE } from "./actionTypes";
 
 const initState ={
-    rule : [],
+    rule : "Default Rule",
   
 }
 
