@@ -1,0 +1,12 @@
+.main-navbar{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+/* for Rules file  */
+
+.rules-input-box{
+ width: 200px;
+ height: 60px;
+}
