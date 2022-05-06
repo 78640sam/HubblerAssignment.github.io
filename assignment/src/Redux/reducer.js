@@ -1,7 +1,9 @@
-import { STORE_RULE } from "./actionTypes";
+import { STORE_ACTION, STORE_RULE } from "./actionTypes";
 
 const initState ={
-    rule : "Default Rule",
+    rule : [],
+    isRule:true,
+    action:[],
   
 }
 
@@ -11,8 +13,11 @@ const reducer = (state=initState,action) =>{
      
 
         case STORE_RULE :
-            return{...state,rule: action.payload }
-     
+            let ruleList=[...state.rule,action.payload]
+            return{...state,rule:ruleList }
+            case STORE_ACTION :
+                let actionList=[...state.action,action.payload]
+                return{...state,action:actionList }
             default :
             return state;
     }

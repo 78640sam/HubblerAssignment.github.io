@@ -4,11 +4,14 @@ import { useSelector } from "react-redux";
 
 function Conditions() {
 
-    const rule=useSelector((state)=>state.rule)
+    const rule1=useSelector((state)=>state.rule)
 
     return (
       <div className="App">
-         <h1>{rule}</h1>
+           {
+           rule1.map((rule)=> <h3>{rule}</h3>)
+       }
+  
          <h4>Button Name</h4>
 
         <input type="text" className="conditions-input-box"/>
