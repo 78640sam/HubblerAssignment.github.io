@@ -1,8 +1,16 @@
 .main-navbar{
-    display: flex;
-    justify-content:space-evenly;
+  
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
-
+.main-navbar-1{
+    display: flex;
+    justify-content:flex-start;
+}
+.main-navbar-2{
+    display: flex;
+    
+}
 
 /* for Rules file  */
 
