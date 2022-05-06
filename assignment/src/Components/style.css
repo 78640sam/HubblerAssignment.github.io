@@ -53,3 +53,19 @@
     height: 30px; 
     font-weight: bold;
 }
+
+/* Rules Page Css */
+
+.main-rulesPage-div{
+    height:800px;
+    border:1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 10px;
+}
+
+/* Actions files css */
+
+/* .main-actions-div{
+    
+
+} */

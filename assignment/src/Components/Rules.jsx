@@ -3,7 +3,7 @@ import './style.css';
 function Rules() {
     return (
       <div className="main-rules-div">
-       
+      
        <input type="text" className="rules-input-box"/>
        <br/>
        <br/><br/>
