@@ -1,10 +1,13 @@
+import './style.css';
 
 function Rules() {
     return (
-      <div className="App">
+      <div className="main-rules-div">
        
        <input type="text" className="rules-input-box"/>
-       <button>Add New Rule</button>
+       <br/>
+       <br/><br/>
+       <button className="rules-btn-box">Add New Rule</button>
       </div>
     );
   }

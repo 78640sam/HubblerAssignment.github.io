@@ -31,8 +31,25 @@
 }
 
 /* for Rules file  */
-
+.main-rules-div{
+    margin-left: 60px;
+    margin-top:200px;
+    
+}
 .rules-input-box{
  width: 200px;
- height: 60px;
+ height: 50px;
+ border-radius: 5px;
+ border :1px solid rgb(181, 181, 181);
+}
+.rules-input-box:focus{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border :1px solid rgb(15, 23, 255);
+   }
+.rules-btn-box{
+    width: 200px;
+    height: 30px; 
+    font-weight: bold;
 }
