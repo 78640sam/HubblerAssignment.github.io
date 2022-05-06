@@ -28,7 +28,17 @@
     width:90px;
     height:40px;
     font-weight: bold;
+    border-radius: 5px;
+    border:none;
 }
+.nav-btn-done:hover{
+    width:90px;
+    height:40px;
+    font-weight: bold;
+    border:1px solid grey;
+    border-radius: 5px;
+}
+
 
 /* for Rules file  */
 .main-rules-div{
@@ -50,8 +60,16 @@
    }
 .rules-btn-box{
     width: 200px;
-    height: 30px; 
+    height: 50px; 
     font-weight: bold;
+    border:none;
+    border-radius: 5px;
+}
+.rules-btn-box:hover{
+    width: 200px;
+    height: 50px; 
+    font-weight: bold;
+    border: 1px solid grey;
 }
 
 /* Rules Page Css */
@@ -82,8 +100,16 @@
       }
    .actions-btn-box{
        width: 200px;
-       height: 30px; 
+       height: 50px; 
        font-weight: bold;
+       border:none;
+       border-radius: 5px;
+   }
+   .actions-btn-box :hover{
+    width: 200px;
+    height: 50px; 
+    font-weight: bold;
+    border: 1px solid grey;
    }
 
 /* conditions files css */
@@ -130,6 +156,15 @@
       }
    .conditions-btn-box{
        width: 200px;
-       height: 30px; 
+       height: 50px; 
        font-weight: bold;
+       border:none;
+       border-radius: 5px;
    }
+   .conditions-btn-box:hover{
+    width: 200px;
+    height: 50px; 
+    font-weight: bold;
+    border:1px solid grey;
+    
+}
