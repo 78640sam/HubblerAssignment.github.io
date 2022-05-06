@@ -5,14 +5,38 @@ function Conditions() {
     return (
       <div className="App">
          <h1>{}Rule</h1>
-        <input type="text" className="rules-input-box"/>
+         <h4>Button Name</h4>
+
+        <input type="text" className="conditions-input-box"/>
        <br/>
-       <br/><hr/><br/>
-       <button className="rules-btn-box">Add New Rule</button>
+       <br/>
+       <select className="conditions-select-box">
+           <option>If All</option>
+       </select>
+       <span></span>
+       <br/>
+       <br/>
+       <br/>
+
+       <div className="conditions-todo-main">
+       <select className="conditions-select-box">
+           <option>Text</option>
+       </select>
+       <select  className="conditions-select-box">
+           <option>Contains</option>
+       </select>
+       <button className="conditions-btn-box-1-todo"> Urgent</button>
+       <input type="text" className="conditions-input-box-1-todo"/>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+
+       <button className="conditions-btn-box">Add New Rule</button>
      
       </div>
     );
-    
+
   }
   
   export default Conditions;

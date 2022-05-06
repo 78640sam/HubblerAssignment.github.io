@@ -61,6 +61,7 @@
     border:1px solid grey;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-right: 10px;
+    padding-left:30px
 }
 
 /* Actions files css */
@@ -69,3 +70,70 @@
     
 
 } */
+
+.actions-input-box{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border :1px solid rgb(181, 181, 181);
+   }
+   .actions-input-box:focus{
+       width: 200px;
+       height: 50px;
+       border-radius: 5px;
+       border :1px solid rgb(15, 23, 255);
+      }
+   .actions-btn-box{
+       width: 200px;
+       height: 30px; 
+       font-weight: bold;
+   }
+
+/* conditions files css */
+
+
+.conditions-todo-main{
+    display:flex;
+    /* justify-content: center; */
+    gap:20px;
+    
+}
+.conditions-input-box-1-todo{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border :1px solid rgb(181, 181, 181);
+    margin-left: -10px;
+   }
+   .conditions-select-box{
+       width:150px;
+       height:50px;
+       font-weight: bold;
+       border-radius: 5px;
+   }
+   .conditions-btn-box-1-todo{
+    width: 100px;
+    height: 50px; 
+    font-weight: bold;
+    border:none;
+    margin-top: 1px;
+    border-radius: 3px;
+    
+}
+   .conditions-input-box{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border :1px solid rgb(181, 181, 181);
+   }
+   .conditions-input-box:focus{
+       width: 200px;
+       height: 50px;
+       border-radius: 5px;
+       border :1px solid rgb(15, 23, 255);
+      }
+   .conditions-btn-box{
+       width: 200px;
+       height: 30px; 
+       font-weight: bold;
+   }
