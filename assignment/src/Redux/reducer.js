@@ -1,11 +1,12 @@
-import { HEADING, STORE_ACTION, STORE_RULE } from "./actionTypes";
+import { HEADING, STORE_ACTION, STORE_RULE,STORE_CONDITIONS } from "./actionTypes";
 
 const initState ={
     rule : [],
     isRule:true,
     action:[],
     curTime:"",
-    heading:""
+    heading:"",
+    condition:[],
 }
 
 const reducer = (state=initState,action) =>{
@@ -20,6 +21,9 @@ const reducer = (state=initState,action) =>{
             case STORE_ACTION :
                 let actionList=[...state.action,action.payload]
                 return{...state,action:actionList }
+                case STORE_CONDITIONS :
+                    let conditionList=[...state.condition,action.payload]
+                    return{...state,condition:conditionList, }
            case HEADING :
                return{...state,heading:action.payload}
 

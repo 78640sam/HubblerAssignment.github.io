@@ -1,3 +1,4 @@
 export const STORE_RULE = "STORE_RULE";
 export const STORE_ACTION = "STORE_ACTION";
-export const HEADING="Heading";
+export const STORE_CONDITIONS = "STORE_CONDITIONS";
+export const HEADING="HEADING";

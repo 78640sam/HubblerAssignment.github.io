@@ -1,4 +1,4 @@
-import {STORE_RULE,STORE_ACTION, HEADING} from './actionTypes';
+import {STORE_RULE,STORE_ACTION, HEADING,STORE_CONDITIONS} from './actionTypes';
 
 const storeRules=(rules)=> ({
     type : STORE_RULE,
@@ -10,15 +10,20 @@ const storeActions=(actions)=> ({
     payload : actions,
     
 })
-const chengeHead=(str)=>{
+const storeConditions=(conditions)=> ({
+    type : STORE_CONDITIONS,
+    payload : conditions,
+    
+})
+const changeHead=(str)=>{
     return {
 
         type:HEADING,
-        payload:str
+        payload:str,
     }
 }
 
 
 
 
-export {storeRules,storeActions,chengeHead}
+export {storeRules,storeActions,storeConditions,changeHead}

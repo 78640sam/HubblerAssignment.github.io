@@ -1,5 +1,5 @@
 import './style.css';
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useDispatch } from "react-redux";
 import {storeActions} from "../Redux/action";
 import { useSelector } from "react-redux";
@@ -9,12 +9,20 @@ function Actions() {
     const [action, setAction] = useState(""); 
     const dispatch=useDispatch();
     const listAction=useSelector((state)=>state.action)
-
-    
+    const [bool, setBool] = useState(false); 
+    useEffect(()=>{
+      
+      if(listAction.length>=5){
+          setBool(true)
+      }else{
+          setBool(false)
+      }
+      },[listAction])
 const handleAction=()=>{
+  
 
     dispatch(storeActions(action));
-   
+
    
    }
     return (
@@ -24,11 +32,13 @@ const handleAction=()=>{
        <br/>
        <br/><br/>
        {
-           listAction.map((action)=> <h3>{action}</h3>)
+           listAction.map((action)=> <div className='rule-box'><h3>{action}</h3></div>)
        }
+       <br/>
        <hr/>
        <br/>
-       <button className="actions-btn-box" onClick={handleAction}>Add Another Action</button>
+       
+       <button className="actions-btn-box" onClick={handleAction} disabled={bool}>Add Another Action</button>
       </div>
     );
   }
