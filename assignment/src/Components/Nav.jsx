@@ -9,14 +9,17 @@ function Nav() {
                <h4>Demo Custom App</h4>
                <p>APP NAME</p>
            </div>
+           <img src="https://imgs.search.brave.com/rksESuuiBjty678ln9r7s8TdCPxwp1BGZ3M6RP75aOk/rs:fit:334:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/dzRQaEY3RndUeVZx/Sy1qVzNlVlVBQUFB/QSZwaWQ9QXBp" className='nav-image-icon' alt=''/>
            <div>
            <h4>Assessment</h4>
                <p>STAGE</p>
            </div>
+           <img src="https://imgs.search.brave.com/rksESuuiBjty678ln9r7s8TdCPxwp1BGZ3M6RP75aOk/rs:fit:334:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/dzRQaEY3RndUeVZx/Sy1qVzNlVlVBQUFB/QSZwaWQ9QXBp" className='nav-image-icon' alt=''/>
            <div>
            <h4>Create PO</h4>
                <p>Button</p>
            </div>
+           <img src="https://imgs.search.brave.com/rksESuuiBjty678ln9r7s8TdCPxwp1BGZ3M6RP75aOk/rs:fit:334:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/dzRQaEY3RndUeVZx/Sy1qVzNlVlVBQUFB/QSZwaWQ9QXBp" className='nav-image-icon' alt=''/>
            <div>
                <h4>Button Rules</h4>
            </div>
@@ -27,7 +30,7 @@ function Nav() {
                <p>App saved on {}</p>
            </div>
            <div>
-               <button>DONE</button>
+               <button className='nav-btn-done'>DONE</button>
            </div>
           
         </div>
