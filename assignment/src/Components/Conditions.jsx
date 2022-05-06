@@ -14,7 +14,7 @@ function Conditions() {
   
          <h4>Button Name</h4>
 
-        <input type="text" className="conditions-input-box"/>
+        <input type="text" className="conditions-input-box" value ="Create Po"/>
        <br/>
        <br/>
        <select className="conditions-select-box">
@@ -39,7 +39,15 @@ function Conditions() {
        <br/>
        <br/>
 
-       <button className="conditions-btn-box">Add New Conditions</button>
+       <button className="conditions-btn-box">
+            {/* ()=>{
+           let obj={};
+           obj.name=name;
+           obj.id=unique;
+           dispatch(obj)
+           state.rule.filter(el=>!==action.payload)</div>el)
+       }>Add New Conditions */}
+       </button>
      
       </div>
     );

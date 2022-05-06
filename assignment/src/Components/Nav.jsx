@@ -5,6 +5,7 @@ function Nav() {
       <div className="App">
         <div className="main-navbar">
             <div className="main-navbar-1">
+                <img src='https://cdn-icons-png.flaticon.com/512/5496/5496411.png' alt="" className='nav-image-icon-1-logo'/>
            <div>
                <h4>Demo Custom App</h4>
                <p>APP NAME</p>
