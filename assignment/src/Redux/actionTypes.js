@@ -1,0 +1,1 @@
+export const STORE_RULE = "STORE_RULE";
