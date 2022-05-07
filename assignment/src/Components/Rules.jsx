@@ -42,7 +42,7 @@ const handleDelRule=(key)=>{
               <h4>Back to Stages</h4>
           </div>
    <br/>   <br/>   <br/>
-       <p>Rules  {listRule.length} </p>
+       <h2>Rules  {listRule.length} </h2>
        <br/>
        <br/>
        <input type="text" className="rules-input-box" value={rules} onChange={(e)=> setRules(e.target.value)}/>
