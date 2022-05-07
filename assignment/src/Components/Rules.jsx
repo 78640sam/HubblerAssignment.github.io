@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import {storeRules, deleteRule,changeHead} from "../Redux/action";
 import { useSelector } from "react-redux";
 import DeleteIcon from '@mui/icons-material/Delete';
-
+import Switch from '@mui/material/Switch';
 
 
 function Rules() {
@@ -50,13 +50,12 @@ const handleDelRule=(key)=>{
        <br/>
        {
            
-           listRule.map((rule)=> <div className='rule-box'><h5 onDoubleClick={()=>{
+           listRule.map((rule)=> <div className='main-rule-box'><div className='rule-box'><h5 onDoubleClick={()=>{
                dispatch()
            }}>{rule}</h5>
-           <img src="https://imgs.search.brave.com/MMevCtRXT6JgRFonnSDTeEoMYumZxKTwAygclwxJSfk/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4y/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvd2ViLWFuZC11/aS01LzIwLzIyNy01/MTIucG5n" alt="" className='rule-image-icon-1'/>
-         <button onClick={handleDelRule}>del</button>
-         <DeleteIcon />
-           </div>)
+ <Switch defaultChecked/>
+
+         </div> <div> <DeleteIcon onClick={handleDelRule} className="ui-icons" /></div></div>)
        }
        <br/>
      
