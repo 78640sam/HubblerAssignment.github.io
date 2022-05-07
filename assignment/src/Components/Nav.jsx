@@ -5,18 +5,20 @@ import { time1 } from "../Redux/action";
 
 function Nav() {
 
-    // const [date,setDate]= useState('');
+    
     const dispatch = useDispatch();
     const listTime = useSelector((state) => state.time)
-    const handelDate = () => {
 
+
+    const handelDate = () => {
         const curTime = new Date();
         const saveDate = curTime.getDate() + "/ " + curTime.getMonth() + "/ " + curTime.getFullYear() + "   " + curTime.getHours() + ":" + curTime.getMinutes() + ":" + curTime.getSeconds()
-
 
         dispatch(time1(saveDate));
 
     }
+
+
     return (
         <div className="App">
             <div className="main-navbar">

@@ -70,13 +70,7 @@ function Conditions() {
        <br/>
 
        <button className="conditions-btn-box" onClick={handleCondition} disabled={bool} >Add New Conditions
-            {/* ()=>{
-           let obj={};
-           obj.name=name;
-           obj.id=unique;
-           dispatch(obj)
-           state.rule.filter(el=>!==action.payload)</div>el)
-       }>Add New Conditions */}
+          
        </button>
      
       </div>

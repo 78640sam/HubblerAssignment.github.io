@@ -16,10 +16,7 @@ function Rules() {
     
     // const delListRule=useSelector((state)=>state.rule)
 useEffect(()=>{
-    // var sate=new Date();
-    // var date=sate.split(" ");
-    // var str=date[3];
-    // setTime(str);
+   
 if(listRule.length>=5){
     setBool(true)
 }else{
