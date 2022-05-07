@@ -2,7 +2,7 @@ import "./style.css";
 import { useSelector, useDispatch } from "react-redux";
 import { storeConditions } from "../Redux/action";
 import React, {useState, useEffect} from "react";
-
+import DeleteIcon from '@mui/icons-material/Delete';
 function Conditions() {
     const [condition, setCondition] = useState(""); 
     const dispatch=useDispatch();
@@ -61,9 +61,12 @@ function Conditions() {
        <br/>
        <br/>
        {
-           listCondition.map((condition)=> <div className='rule-box' >
+           listCondition.map((condition)=> <div className='main-rule-box' ><div className='rule-box' >
 
                <h3>{condition}</h3>
+
+               </div>
+           <div> <DeleteIcon className="ui-icons" /></div>
            </div>)
        }
        <br/>

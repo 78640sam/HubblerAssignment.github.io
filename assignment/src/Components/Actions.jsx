@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import { useDispatch } from "react-redux";
 import {storeActions} from "../Redux/action";
 import { useSelector } from "react-redux";
-
+import DeleteIcon from '@mui/icons-material/Delete';
 function Actions() {
 
     const [action, setAction] = useState(""); 
@@ -19,7 +19,7 @@ function Actions() {
           setBool(false)
       }
       },[listAction])
-      
+
 
 const handleAction=()=>{
   
@@ -35,7 +35,10 @@ const handleAction=()=>{
        <br/>
        <br/><br/>
        {
-           listAction.map((action)=> <div className='rule-box'><h3>{action}</h3></div>)
+           listAction.map((action)=> <div className='main-rule-box' ><div className='rule-box'><h3>{action}</h3>
+           </div>
+           <div> <DeleteIcon className="ui-icons" /></div>
+           </div>)
        }
        <br/>
        <hr/>
