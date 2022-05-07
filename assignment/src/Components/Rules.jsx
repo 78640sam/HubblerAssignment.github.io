@@ -3,6 +3,8 @@ import React, {useEffect, useState} from "react";
 import { useDispatch } from "react-redux";
 import {storeRules, deleteRule,changeHead} from "../Redux/action";
 import { useSelector } from "react-redux";
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 
 function Rules() {
@@ -53,9 +55,12 @@ const handleDelRule=(key)=>{
            }}>{rule}</h5>
            <img src="https://imgs.search.brave.com/MMevCtRXT6JgRFonnSDTeEoMYumZxKTwAygclwxJSfk/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4y/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvd2ViLWFuZC11/aS01LzIwLzIyNy01/MTIucG5n" alt="" className='rule-image-icon-1'/>
          <button onClick={handleDelRule}>del</button>
+         <DeleteIcon />
            </div>)
        }
        <br/>
+     
+
        <button className="rules-btn-box" onClick={handleRule} disabled={bool}>Add New Rule</button>
       </div>
     );
