@@ -8,15 +8,12 @@ import { useSelector } from "react-redux";
 function Rules() {
     
     const [rules, setRules] = useState(""); 
-    //  const [heading,setHEading]=useState("");
     const [bool, setBool] = useState(false); 
-    // const [curTime, setTime] = useState(); 
     const dispatch=useDispatch();
     const listRule=useSelector((state)=>state.rule)
     
-    // const delListRule=useSelector((state)=>state.rule)
+  
 useEffect(()=>{
-   
 if(listRule.length>=5){
     setBool(true)
 }else{
@@ -25,17 +22,15 @@ if(listRule.length>=5){
 },[listRule])
 
 const handleRule=()=>{
-    // setHEading(rules)
+  
  dispatch(storeRules(rules));
  dispatch(changeHead(rules));
 
-
 }
+
 const handleDelRule=(key)=>{
-    // setHEading(rules)
+  
  dispatch(deleteRule(key));
-
-
 }
 
     return (
