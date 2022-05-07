@@ -8,7 +8,7 @@ const initState ={
     curTime:"",
     heading:"Default User",
     condition:[],
-    time:"",
+    time:"7/4/2022 16:0:23",
 }
 
 const reducer = (state=initState,action) =>{

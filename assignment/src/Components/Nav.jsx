@@ -12,7 +12,7 @@ function Nav() {
 
     const handelDate = () => {
         const curTime = new Date();
-        const saveDate = curTime.getDate() + "/ " + curTime.getMonth() + "/ " + curTime.getFullYear() + "   " + curTime.getHours() + ":" + curTime.getMinutes() + ":" + curTime.getSeconds()
+        const saveDate = curTime.getDate() + "/" + curTime.getMonth() + "/" + curTime.getFullYear() + "   " + curTime.getHours() + ":" + curTime.getMinutes() + ":" + curTime.getSeconds()
 
         dispatch(time1(saveDate));
 
