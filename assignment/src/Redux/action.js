@@ -1,8 +1,13 @@
-import {STORE_RULE,STORE_ACTION, HEADING,STORE_CONDITIONS} from './actionTypes';
+import {STORE_RULE,STORE_ACTION, HEADING,STORE_CONDITIONS, DELETE_RULE,TIME} from './actionTypes';
 
 const storeRules=(rules)=> ({
     type : STORE_RULE,
     payload : rules,
+    
+})
+const time1=(times)=> ({
+    type : TIME,
+    payload : times,
     
 })
 const storeActions=(actions)=> ({
@@ -15,15 +20,22 @@ const storeConditions=(conditions)=> ({
     payload : conditions,
     
 })
-const changeHead=(str)=>{
-    return {
 
+const deleteRule=(key)=> ({
+    type : DELETE_RULE,
+    payload:key
+    
+})
+
+const changeHead=(headings)=>({
+   
         type:HEADING,
-        payload:str,
-    }
-}
+      payload:headings,
+        
+   
+})
 
 
 
 
-export {storeRules,storeActions,storeConditions,changeHead}
+export {storeRules,storeActions,storeConditions,changeHead,deleteRule,time1}

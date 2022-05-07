@@ -10,6 +10,7 @@ function Actions() {
     const dispatch=useDispatch();
     const listAction=useSelector((state)=>state.action)
     const [bool, setBool] = useState(false); 
+
     useEffect(()=>{
       
       if(listAction.length>=5){
@@ -18,6 +19,8 @@ function Actions() {
           setBool(false)
       }
       },[listAction])
+      
+
 const handleAction=()=>{
   
 

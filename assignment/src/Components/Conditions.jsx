@@ -6,18 +6,20 @@ import React, {useState, useEffect} from "react";
 function Conditions() {
     const [condition, setCondition] = useState(""); 
     const dispatch=useDispatch();
-    const rule1=useSelector((state)=>state.rule)
+    const rule1=useSelector((state)=>state.heading)
   const [bool, setBool] = useState(false); 
     const listCondition=useSelector((state)=>state.condition)
 
     useEffect(()=>{
       
         if(listCondition.length>=8){
+
             setBool(true)
         }else{
             setBool(false)
         }
         },[listCondition])
+        
     const handleCondition=()=>{
   
 
@@ -28,10 +30,10 @@ function Conditions() {
 
     return (
       <div className="App">
-           {
-           rule1.map((rule)=> <h3>{rule}</h3>)
-       }
-  
+       
+  {
+       <h1>{rule1}</h1>
+  }
          <h4>Button Name</h4>
 
         <input type="text" className="conditions-input-box" value ="Create Po"/>
